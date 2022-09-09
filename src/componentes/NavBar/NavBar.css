@@ -1,0 +1,23 @@
+.navbar {
+    background: rgb(129, 6, 41);
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 1rem;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(245, 141, 141);
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+}
