@@ -21,3 +21,9 @@ a:hover {
     gap: 2rem;
     list-style: none;
 }
+.iconos {
+    font-size: 20px;
+    display: flex;
+    gap: 30px;
+    margin-right: 10px;
+}

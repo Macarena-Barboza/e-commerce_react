@@ -1,0 +1,45 @@
+.itemFooter {
+    list-style: none;
+}
+
+footer {
+    background: rgb(129, 6, 41);
+    width: 100%;
+    /* max-height: 200px; */
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* margin-bottom: auto; */
+}
+li {
+    list-style: none;
+}
+ul li {
+    display: flex;
+    justify-content: flex-start;
+}
+.copy {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(129, 6, 41);
+    color: #fff;
+}
+.p_pag {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    gap: 60px;
+}
+.p_pag__redes i:hover {
+    text-decoration: none;
+}
+.p_pag__link {
+    color: #fff;
+}
+.p_pag__contact__font {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+}
