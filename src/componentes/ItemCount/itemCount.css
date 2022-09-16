@@ -1,0 +1,10 @@
+.btnMasMenos {
+    margin: 5%;
+}
+.btnMas,
+.btnMenos {
+    margin: 0 4%;
+    border-radius: 10px;
+    background-color: rgb(150, 150, 150);
+    border: none;
+}
