@@ -1,8 +1,9 @@
-import './boton.css';
+// import './boton.css';
+// import './Boton.scss';
 
 function Boton(props) {
   return (
-    <button>{props.text}</button>
+      <button>{props.text}</button>
   )
 }
 

@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
-import './itemCount.css';
-import '../Boton/boton.css';
+import './itemCount.scss';
+import '../Boton/Boton.scss';
 
 
 function ItemCount({initial=1, stock}) {
@@ -36,7 +36,7 @@ function ItemCount({initial=1, stock}) {
         <span>{count}</span>
         <button className='btnMas'onClick={agregar} >+</button>
     </div>
-    <button onClick={onAddToCart}>agregar carrito </button>
+    <button onClick={onAddToCart}>agregar Carrito</button>
     </>
   )
 }

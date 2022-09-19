@@ -1,10 +1,9 @@
-// import Boton from '../Boton/Boton';
 import ItemCount from '../ItemCount/ItemCount';
-import './card.css';
+import './card.scss';
 
 
 function Card(props) {
-  let { precio, titulo, img, descripcion} = props;
+  let { precio, titulo, img, descripcion, stock} = props;
   return (
     <div>
       <div className="content">
@@ -15,9 +14,8 @@ function Card(props) {
             <p>{descripcion} </p>
            <h3>${precio}</h3>
         </div>
-        <ItemCount stock={5}/>
 
-        {/* <Boton text='agregar carrito'onClick=""/> */}
+        <ItemCount initial= {1} stock={stock}/>
       </div>
     </div>
   )

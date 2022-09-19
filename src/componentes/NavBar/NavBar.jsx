@@ -1,12 +1,13 @@
-import './NavBar.css';
+// import './NavBar.css';
+import './NavBar.scss';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
-import { faUser } from '@fortawesome/free-solid-svg-icons'
+import { FaChess,FaUserCircle } from 'react-icons/fa';
 
 function NavBar() {
   return (
     <header className='navbar'>
-        <div className='Logo'>Super Games</div>
+        <div className='Logo'> <FaChess/>  Super Games</div>
         <div>
             <ul className='item'>
                 <li><a href="# ">Fantasia</a></li>
@@ -17,7 +18,7 @@ function NavBar() {
             </ul>
         </div>
         <div className='iconos'>      
-          <a a href="# "> <FontAwesomeIcon icon={faUser}/></a>
+          <a a href="# "> <FaUserCircle/></a>
           <a a href="# "><FontAwesomeIcon icon={faCartShopping} /></a>
         </div>
     </header>

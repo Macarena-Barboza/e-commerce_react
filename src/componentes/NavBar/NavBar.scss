@@ -10,9 +10,9 @@
 a {
     color: #fff;
     text-decoration: none;
-}
-a:hover {
-    color: rgb(245, 141, 141);
+    &:hover {
+        color: rgb(245, 141, 141);
+    }
 }
 
 .item {
