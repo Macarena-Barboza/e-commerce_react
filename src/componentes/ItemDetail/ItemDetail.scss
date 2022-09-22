@@ -1,0 +1,17 @@
+.producto {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 3rem;
+    &__img {
+        //   background-color: red;
+        width: 50%;
+    }
+    &__text {
+        width: 40%;
+        &__precio {
+            font-size: 30px;
+            color: green;
+            font-weight: bold;
+        }
+    }
+}

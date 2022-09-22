@@ -56,3 +56,17 @@ export default function getItems () {
         }, 2000);
     })
 }
+
+export function getSingleItems (idItem) {
+    return new Promise ((resolve, reject) => {
+        setTimeout(() => {
+            let itemFind = data.find(item => item.id === idItem)
+            if(itemFind){
+                resolve(itemFind);
+            }
+            else{
+                reject(new Error("Juego no encontrado"));
+            }
+        }, 2000);
+    })
+}
