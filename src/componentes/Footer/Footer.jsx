@@ -8,7 +8,8 @@ function Footer() {
   return (
         <footer>
             <div className="p_pag">
-                <p><IoGameController/></p>
+                <a href=" #" className="p_pag__ico"><IoGameController/></a>
+                
                 <div className="p_pag__acerca">
                     <ul>
                         <li><a href="# " className="p_pag__link">Soporte</a></li>

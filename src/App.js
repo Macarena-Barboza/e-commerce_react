@@ -3,17 +3,29 @@ import NavBar from './componentes/NavBar/NavBar';
 import Footer from './componentes/Footer/Footer';
 import ItemListContainer from './componentes/Productos/ItemListContainer';
 import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailContainer';
-
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import Accesorios from './componentes/Accesorios/Accesorios';
+import Login from './componentes/Login/Login';
+import Carrito from './componentes/Carrito/Carrito';
+ 
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter className="App">
         <NavBar/>
-        <ItemListContainer greeting='Juegos excelentes de PS5 y PS4'/>
-        <ItemDetailContainer/>
+        <Routes>
+          <Route path='/' element={<ItemListContainer greeting='Juegos excelentes de PS5 y PS4'/>}/>
+
+          <Route path='/categoria/:categoria' element={<ItemListContainer/>}/>
+          <Route path='/fantasia/:id' element={<ItemDetailContainer/>}/>
+          <Route path='/accesorios' element={<Accesorios/>}/>
+          <Route path='/usuario' element={<Login/>}/>
+          <Route path='/carrito' element={<Carrito/>}/>
+          <Route path='*' element={<h1>404 Página no encontrada</h1>}/>
+        </Routes>
         <Footer/>
-    </div>
+      </BrowserRouter>
   );
 }
 
 export default App;
- 
+

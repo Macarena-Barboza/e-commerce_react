@@ -6,6 +6,18 @@
     align-items: center;
     color: #fff;
     padding: 1rem;
+    &__item {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        list-style: none;
+    }
+    &__iconos {
+        font-size: 20px;
+        display: flex;
+        gap: 30px;
+        margin-right: 10px;
+    }
 }
 a {
     color: #fff;
@@ -14,16 +26,7 @@ a {
         color: rgb(245, 141, 141);
     }
 }
-
-.item {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    list-style: none;
-}
-.iconos {
-    font-size: 20px;
-    display: flex;
-    gap: 30px;
-    margin-right: 10px;
+.active {
+    font-weight: bold;
+    color: rgb(254, 209, 93);
 }

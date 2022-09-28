@@ -3,7 +3,7 @@
 
 function Boton(props) {
   return (
-      <button>{props.text}</button>
+      <button className="btn">{props.text}</button>
   )
 }
 

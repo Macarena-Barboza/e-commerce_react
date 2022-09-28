@@ -1,17 +1,56 @@
 .producto {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin: 2rem 3rem;
     &__img {
-        //   background-color: red;
+        // background-color: rgb(194, 183, 183);
         width: 50%;
+        margin: 30px 0;
+        display: flex;
+        justify-content: center;
     }
+
     &__text {
         width: 40%;
+        // background-color: rgb(231, 156, 156);
+        &__cont {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 5%;
+        }
         &__precio {
             font-size: 30px;
             color: green;
             font-weight: bold;
+        }
+        &__ico {
+            padding-right: 6%;
+            font-size: 25px;
+            border: none;
+            background: none;
+            &:hover {
+                cursor: pointer;
+            }
+            &:active {
+                transform: scale(1.2);
+                transition: 0.1s;
+            }
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .producto {
+        display: flex;
+        flex-direction: column;
+        margin: 10%;
+        &__text {
+            width: 100%;
+        }
+        img {
+            width: 100%;
         }
     }
 }

@@ -1,21 +1,26 @@
-import ItemCount from '../ItemCount/ItemCount';
 import './card.scss';
+import {Link} from 'react-router-dom';
+import {FaStar } from 'react-icons/fa';
 
 
 function Card(props) {
-  let { precio, titulo, img, descripcion, stock} = props;
+  let { precio, titulo, img, id, reseña} = props;
+  const urlUnica= `/fantasia/${id}`
   return (
     <div>
-      <div className="content">
-        <img src={img} alt="producto"/>
+      <div className="card">
+        <Link to= {urlUnica}>
+          <img src={img} alt="producto"/>
+        </Link> 
 
-        <div className="description">
+        <div className="card__description">
             <h2>{titulo}</h2>
-            <p>{descripcion} </p>
-           <h3>${precio}</h3>
+            <div className="card__description__cont">
+              <h3>${precio}</h3>
+              <p className="card__description__star"><FaStar className='star'/>{reseña}</p>
+            </div>
         </div>
 
-        <ItemCount initial= {1} stock={stock}/>
       </div>
     </div>
   )

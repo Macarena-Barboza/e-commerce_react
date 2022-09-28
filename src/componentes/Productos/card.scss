@@ -11,15 +11,32 @@ h1 {
     flex-direction: column;
     justify-content: center;
 }
-.content {
+.card {
     max-width: 300px;
     padding: 1rem;
+    &__description {
+        &__cont {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 25px;
+            align-items: center;
+            h3,
+            p {
+                margin-top: 0;
+            }
+        }
+        &__star {
+            font-size: 17px;
+            align-items: center;
+            display: flex;
+            .star {
+                color: rgb(255, 208, 0);
+                font-size: 22px;
+            }
+        }
+    }
 }
 img {
     max-width: 300px;
     border-radius: 17px;
-}
-.description p {
-    display: flex;
-    justify-content: center;
 }

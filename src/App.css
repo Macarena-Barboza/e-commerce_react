@@ -11,8 +11,14 @@ body {
     min-height: 100%;
     position: relative;
 } */
-/* ____________________________ */
+/* body {
+    background-color: red;
+} */
 
+/* ____________________________ */
+h1 {
+    text-align: center;
+}
 .App {
     text-align: center;
 }

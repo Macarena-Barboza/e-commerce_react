@@ -1,0 +1,10 @@
+.carrito {
+    margin: 10% 5%;
+    text-align: center;
+    &__titulo {
+        font-size: 3rem;
+    }
+    &__text {
+        font-size: 2rem;
+    }
+}
