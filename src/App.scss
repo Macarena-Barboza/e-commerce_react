@@ -1,21 +1,25 @@
 * {
     scroll-behavior: smooth;
+    margin: 0;
+    box-sizing: border-box;
 }
-/* 
-html {
-    height: 100%;
-}
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    position: relative;
-} */
-/* body {
-    background-color: red;
-} */
-
+// html {
+//     height: 100%; //_______
+// }
+// body {
+//     display: flex;
+//     flex-direction: column;
+//     min-height: 100%;
+//     transition: ease 0.4s;
+//     position: relative; //_______
+// }
 /* ____________________________ */
+.conten {
+    margin: 5rem 0;
+    &__error {
+        margin: 8rem 0 23rem 0;
+    }
+}
 h1 {
     text-align: center;
 }

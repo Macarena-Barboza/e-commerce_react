@@ -1,12 +1,22 @@
-import { useState, useEffect  } from 'react';
-import Card from './Card';
-import './card.scss';
+import React, { useState, useEffect  } from 'react';
+import ItemList from './ItemList'
 import getItems,{getItemsCategoria} from '../../services/mockAPI';
 import {useParams} from 'react-router-dom';
+import CircularProgress from '@mui/material/CircularProgress';
 
 
 function ItemListContainer({greeting}) {
   let [data, setData]= useState([]);
+
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+  }, []);
+
 
   const {categoria} = useParams();
 
@@ -19,25 +29,13 @@ function ItemListContainer({greeting}) {
   }, [categoria]);
 
   return (
-    <div>
-        <h1>{greeting}</h1>
-        <section>
-              {data.map((item) => {
-                  return(
-                    <Card
-                      key={item.id}
-                      id={item.id}
-                      precio={item.precio}
-                      titulo={item.titulo}
-                      img={item.img}
-                      descripcion={item.descripcion}
-                      stock={item.stock}
-                      reseña={item.reseña}
-                    />
-                  );
-                })}
-        </section>
-    </div>
+    <>
+    { loading ? <CircularProgress className='loader'/>   : 
+    <div className='conten' >
+      <h1>{greeting}</h1>
+      <ItemList data={data}/>
+    </div> }
+    </>
   );
 }
 

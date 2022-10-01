@@ -8,9 +8,10 @@ function Card(props) {
   const urlUnica= `/fantasia/${id}`
   return (
     <div>
+
       <div className="card">
         <Link to= {urlUnica}>
-          <img src={img} alt="producto"/>
+          <img src={img} alt={titulo}/>
         </Link> 
 
         <div className="card__description">
@@ -25,5 +26,5 @@ function Card(props) {
     </div>
   )
 }
-
 export default Card
+

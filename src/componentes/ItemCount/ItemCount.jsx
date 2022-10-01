@@ -3,22 +3,18 @@ import './itemCount.scss';
 import '../Boton/Boton.scss';
 
 
-function ItemCount({initial, stock}) {
+function ItemCount({initial, stock, onAddToCart}) {
     const [count, setCount] = useState (initial)
 
-    function agregar(){
+    function handleSumar(){
         if(count < stock){
             setCount(count+1)
         }
     }
-    function restar(){
+    function handleRestar(){
         if(count > 0){
             setCount(count-1)
         }
-    }
-
-    function onAddToCart(){
-        // alert(`agregado al carrito `)
     }
 
   return (
@@ -26,14 +22,13 @@ function ItemCount({initial, stock}) {
         <p>stock: <span>{stock - count}</span></p>
     
         <div className='btnMasMenos'>
-            <button disabled={count <= 0} className='btnMenos' onClick={restar}>-</button>
+            <button disabled={count <= 0} className='btnMenos' onClick={handleRestar}>-</button>
             <span>{count}</span>
-            <button disabled={count >= stock} className='btnMas'  onClick={agregar} >+</button>
+            <button disabled={count >= stock} className='btnMas'  onClick={handleSumar} >+</button>
             
         </div>
-        <button disabled={count <= 0} onClick={onAddToCart} className="btnAgregar">agregar Carrito</button>
-        <button className='btn'>Comprar</button>
-           </div>
+            <button disabled={count <= 0} onClick={() => onAddToCart(count)} className='btnAgregar'>agregar carrito </button>
+        </div>
   )
 }
 

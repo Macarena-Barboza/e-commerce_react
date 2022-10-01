@@ -276,7 +276,7 @@ export default function getItems () {
 
 export function getItemsCategoria (categoria) {
     return new Promise ((resolve, reject) => {
-        // setTimeout(() => {
+        setTimeout(() => {
             let itemFind = data.filter(item => item.categoria === categoria)
             if(itemFind){
                 resolve(itemFind);
@@ -284,7 +284,7 @@ export function getItemsCategoria (categoria) {
             else{
                 reject(new Error("Juego no encontrado"));
             }
-        // }, 1000);
+        }, 1000);
     })
 }
 
