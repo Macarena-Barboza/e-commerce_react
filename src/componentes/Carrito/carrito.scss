@@ -1,10 +1,12 @@
-.carrito {
+.carritos {
     margin: 10% 0 19%;
     text-align: center;
-    &__titulo {
-        font-size: 3rem;
-    }
-    &__text {
-        font-size: 2rem;
+    font-size: 2rem;
+    &__btn {
+        padding: 9px;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(0, 0, 0);
+        color: #fff;
     }
 }

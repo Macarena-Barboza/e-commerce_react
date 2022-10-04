@@ -1,16 +1,18 @@
-import React, {useState} from 'react'
+import React, {useState, useContext} from 'react'
 import './ItemDetail.scss';
 import ItemCount from '../ItemCount/ItemCount';
 import Boton from '../Boton/Boton';
 import { FaHeart } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { toast } from "react-toastify";
-
+import { cartContext } from '../../Context/cartContext';
 
 function ItemDetail({data}) {
 const[quitarCount , setQuitarCount]= useState(false)
+const {addItem} = useContext(cartContext)
 
-      function onAdd(count){
+function onAdd(count){
+      addItem(data, count)
             toast(`Agregaste ${count} unidad al Carrito! `,{autoClose: 2000,theme: "colored", hideProgressBar: true, style: {
                   background: "linear-gradient(19deg, #97fbc9 0%, #dbafe7 100%)",
                   borderRadius:"7px",

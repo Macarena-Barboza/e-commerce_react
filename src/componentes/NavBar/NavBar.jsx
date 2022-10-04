@@ -1,9 +1,7 @@
 import './NavBar.scss';
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import { FaChess,FaUserCircle } from 'react-icons/fa';
 import {Link} from 'react-router-dom';
-
+import CartWidget from './CartWidget';
 
 function NavBar() {
   return (
@@ -23,7 +21,7 @@ function NavBar() {
         </div>
         <div className='navbar__iconos'>      
           <Link to='/usuario'><FaUserCircle/></Link>
-          <Link to='/carrito'><FontAwesomeIcon icon={faCartShopping}/></Link>
+          <Link to='/carrito'> <CartWidget/> </Link>
         </div>
     </header>
   )
