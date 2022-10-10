@@ -5,10 +5,11 @@ const data = [
         descripcion: "Aloy en su legendaria búsqueda para desentrañar los misterios de un mundo gobernado por máquinas mortales.Explora tierras remotas, enfréntate a máquinas más grandes e imponentes y descubre increíbles tribus en tu regreso a un futuro lejano en el mundo apocalíptico de Horizon.",
         img:"/assets/horizon1.jpg",
         precio:"19600",
-        stock: "7",
+        stock: "0",
         categoria:"accion",
-        reseña:"4,9",
+        reseña:"4.9",
         características: "Un jugador",
+        oferta:"20%",
     },
     {
         id: 2,
@@ -19,7 +20,7 @@ const data = [
         precio: "19600",
         stock: "4",
         categoria:"fantasia",
-        reseña:"4,5",
+        reseña:"4.5",
         características: "Un jugador",
     },
     {
@@ -30,7 +31,7 @@ const data = [
         precio: "19600",
         stock: "3",
         categoria:"accion",
-        reseña:"4,9",
+        reseña:"4.9",
         características: "Un jugador",
     },
     {
@@ -41,7 +42,7 @@ const data = [
         precio: "19600",
         stock: "2",
         categoria:"accion",
-        reseña:"3,8",
+        reseña:"3.8",
         características: "Un jugador",
     },
     {
@@ -52,7 +53,7 @@ const data = [
         precio: "20000",
         stock: "2",
         categoria:"aventura",
-        reseña:"3,5",
+        reseña:"3.5",
         características: "Un jugador",
     },
     {
@@ -74,7 +75,7 @@ const data = [
         precio: "23000",
         stock: "3",
         categoria:["accion", "aventura"],
-        reseña:"4,7",
+        reseña:"4.7",
         características: "Un jugador",
     },
     {
@@ -85,7 +86,7 @@ const data = [
         precio: "20000",
         stock: "7",
         categoria:"accion",
-        reseña:"4,8",
+        reseña:"4,.8",
         características: "Un jugador",
     },
     {
@@ -96,7 +97,7 @@ const data = [
         precio: "13000",
         stock: "1",
         categoria:"terror",
-        reseña:"3,8",
+        reseña:"3.8",
         características: "Un jugador",
     },
     {
@@ -107,7 +108,7 @@ const data = [
         precio: "10000",
         stock: "7",
         categoria:"aventura",
-        reseña:"4,4",
+        reseña:"4.4",
         características: "Un jugador",
     },
     {
@@ -129,7 +130,7 @@ const data = [
         precio: "23000",
         stock: "5",
         categoria:"fantasia",
-        reseña:"4,7",
+        reseña:"4.7",
         características: "Un jugador",
     },
     {
@@ -140,7 +141,7 @@ const data = [
         precio: "25000",
         stock: "4",
         categoria:"fantasia",
-        reseña:"4,8",
+        reseña:"4.8",
         características: "Un jugador",
     },
     {
@@ -151,7 +152,7 @@ const data = [
         precio: "26000",
         stock: "5",
         categoria: "aventura",
-        reseña:"4,5",
+        reseña:"4.5",
         características: "Multiple jugadores",
     },
     {
@@ -162,7 +163,7 @@ const data = [
         precio: "18000",
         stock: "2",
         categoria: "disparo",
-        reseña:"4,6",
+        reseña:"4.6",
         características: "Un jugador",
     },
     {
@@ -184,7 +185,7 @@ const data = [
         precio: "10000",
         stock: "5",
         categoria:"carrera",
-        reseña:"4,6",
+        reseña:"4.6",
         características: "Multiple jugadores",
     },
     {
@@ -195,7 +196,7 @@ const data = [
         precio: "13000",
         stock: "8",
         categoria:"deporte",
-        reseña:"4,2",
+        reseña:"4.2",
         características: "Multiple jugadores",
     },
     {
@@ -206,7 +207,7 @@ const data = [
         precio: "15000",
         stock: "5",
         categoria: "carrera",
-        reseña:"4,3",
+        reseña:"4.3",
         características: "Multiple jugadores",
     },
     {
@@ -215,9 +216,9 @@ const data = [
         descripcion: "Explora entornos amplios y destruibles en los que dos partidas nunca serán iguales. Forma equipo con tus amigos y esprinta, trepa y aplasta a tus rivales para conseguir la victoria magistral, ya sea construyendo en Battle Royale de Fortnite o sin hacerlo en Cero construcción de Fortnite. Descubre nuevas formas de jugar a miles de modos de creadores con géneros que van desde las aventuras hasta el rol y la supervivencia, entre otros, o únete a hasta tres amigos para defenderos de las hordas de monstruos en Salvar el mundo ",
         img: "/assets/fortnite1.jpg",
         precio: "20000",
-        stock: "2",
+        stock: "0",
         categoria:"accion",
-        reseña:"4,3",
+        reseña:"4.3",
         características:"Multiple jugadores",
     },
     {
@@ -228,7 +229,7 @@ const data = [
         precio: "23000",
         stock: "6",
         categoria:"aventura",
-        reseña:"4,7",
+        reseña:"4.7",
         características: "Multiple jugadores",
     },
     {
@@ -239,7 +240,7 @@ const data = [
         precio: "25000",
         stock: "2",
         categoria:"carrera",
-        reseña:"4,6",
+        reseña:"4.6",
         características: "Multiple jugadores",
     },
     {
@@ -261,7 +262,7 @@ const data = [
         precio: "19600",
         stock: "5",
         categoria:"fantasia",
-        reseña:"3,8",
+        reseña:"3.8",
         características: "Un jugador",
     },
 ]
@@ -290,7 +291,7 @@ export function getItemsCategoria (categoria) {
 
 export function getSingleItems (idItem) {
     return new Promise ((resolve, reject) => {
-        // setTimeout(() => {
+        setTimeout(() => {
             let itemFind = data.find(item => item.id === parseInt(idItem))
             if(itemFind){
                 resolve(itemFind);
@@ -298,6 +299,6 @@ export function getSingleItems (idItem) {
             else{
                 reject(new Error("Juego no encontrado"));
             }
-        // }, 1000);
+        }, 1000);
     })
 }

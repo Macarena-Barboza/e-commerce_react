@@ -6,18 +6,20 @@ import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailCon
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Accesorios from './componentes/Accesorios/Accesorios';
 import Login from './componentes/Login/Login';
-// import Carrito from './componentes/Carrito/Carrito';
-import CartWidget from './componentes/NavBar/CartWidget';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
 import CartContextProvider from './Context/cartContext';
-// import Carrito from './componentes/NavBar/CartWidget';
 import Carrito from './componentes/Carrito/Carrito';
+import FavContextProvider from './Context/favContext';
+import Favorito from './componentes/Favorito/Favorito';
+
  
 function App() {
   return (
     <BrowserRouter className="App">
         <CartContextProvider>
+        <FavContextProvider>
           <NavBar/>
           <Routes >
             <Route path='/' element={<ItemListContainer greeting='Juegos excelentes de PS5 y PS4'/>}/>
@@ -27,12 +29,14 @@ function App() {
             <Route path='/accesorios' element={<Accesorios/>}/>
             <Route path='/usuario' element={<Login/>}/>
             <Route path='/carrito' element={<Carrito/>}/>
+            <Route path='/favorito' element={<Favorito/>}/>
             <Route path='*' element={<h1 className='conten__errorj'>404 Página no encontrada</h1>}/>
           </Routes>
           <Footer/>
           <ToastContainer/>
-    </CartContextProvider>
-      </BrowserRouter>
+        </FavContextProvider>
+      </CartContextProvider>
+    </BrowserRouter>
 
   );
 }

@@ -2,8 +2,8 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: center;
-    gap: 12px;
-    margin: 0 60px;
+    gap: 20px;
+    margin: 0 40px; //???????????????
 }
 
 h1 {
@@ -13,7 +13,7 @@ h1 {
 }
 .card {
     max-width: 300px;
-    padding: 1rem;
+    // padding: 1rem;
     &__description {
         &__cont {
             display: flex;
@@ -39,7 +39,4 @@ h1 {
 img {
     max-width: 300px;
     border-radius: 17px;
-}
-.loader {
-    margin: 16% 50%;
 }

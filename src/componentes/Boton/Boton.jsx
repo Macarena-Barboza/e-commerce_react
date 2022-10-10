@@ -1,5 +1,5 @@
 // import './boton.css';
-// import './Boton.scss';
+import './Boton.scss';
 
 function Boton(props) {
   return (

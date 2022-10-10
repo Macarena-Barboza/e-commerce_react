@@ -17,10 +17,12 @@ function ItemCount({initial, stock, onAddToCart}) {
         }
     }
 
+
   return (
     <div>
-        <p>stock: <span>{stock - count}</span></p>
-    
+  
+         <p>stock: <span>{stock - count}</span></p>
+
         <div className='btnMasMenos'>
             <button disabled={count <= 0} className='btnMenos' onClick={handleRestar}>-</button>
             <span>{count}</span>

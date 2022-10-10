@@ -1,7 +1,8 @@
 import './NavBar.scss';
-import { FaChess,FaUserCircle } from 'react-icons/fa';
+import { FaChess,FaUserCircle,FaHeart } from 'react-icons/fa';
 import {Link} from 'react-router-dom';
 import CartWidget from './CartWidget';
+// import Carrito from './CartWidget';
 
 function NavBar() {
   return (
@@ -12,7 +13,6 @@ function NavBar() {
         <div>
             <ul className='navbar__item'>
                 <li><Link to='/' >Inicio</Link></li>
-                {/* <li><Link to='/'>Juegos</Link></li> */}
                 <li><Link to='/categoria/fantasia'>Fantasia</Link></li>
                 <li><Link to='/categoria/accion'>Acción</Link></li>
                 <li><Link to='/categoria/deporte'>Deportes</Link></li>
@@ -20,7 +20,9 @@ function NavBar() {
             </ul>
         </div>
         <div className='navbar__iconos'>      
+          <Link to='/favorito'><FaHeart/></Link>
           <Link to='/usuario'><FaUserCircle/></Link>
+          {/* <Link to='/carrito'> <Carrito/> </Link> */}
           <Link to='/carrito'> <CartWidget/> </Link>
         </div>
     </header>

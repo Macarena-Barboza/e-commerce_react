@@ -2,9 +2,8 @@ footer {
     background: rgb(129, 6, 41);
     width: 100%;
     padding-bottom: 1%;
-    // _________
-    // width: 100%;
-    // margin-top: auto;
+    position: absolute;
+    bottom: 0;
 }
 li {
     list-style: none;

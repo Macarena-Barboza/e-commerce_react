@@ -3,16 +3,12 @@
     margin: 0;
     box-sizing: border-box;
 }
-// html {
-//     height: 100%; //_______
-// }
-// body {
-//     display: flex;
-//     flex-direction: column;
-//     min-height: 100%;
-//     transition: ease 0.4s;
-//     position: relative; //_______
-// }
+
+body {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 13rem;
+}
 /* ____________________________ */
 .conten {
     margin: 5rem 0;
@@ -25,6 +21,7 @@ h1 {
 }
 .App {
     text-align: center;
+    // position: relative;
 }
 
 .App-logo {

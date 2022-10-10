@@ -17,7 +17,6 @@ function ItemListContainer({greeting}) {
     }, 1500);
   }, []);
 
-
   const {categoria} = useParams();
 
   useEffect(()=>{
@@ -31,10 +30,10 @@ function ItemListContainer({greeting}) {
   return (
     <>
     { loading ? <CircularProgress className='loader'/>   : 
-    <div className='conten' >
+    (<div className='conten' >
       <h1>{greeting}</h1>
       <ItemList data={data}/>
-    </div> }
+    </div>) }
     </>
   );
 }

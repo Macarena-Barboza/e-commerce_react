@@ -1,5 +1,5 @@
-.carritos {
-    margin: 10% 0 19%;
+.carrito {
+    margin: 5% 19%;
     text-align: center;
     font-size: 2rem;
     &__btn {
@@ -8,5 +8,72 @@
         border-radius: 10px;
         background-color: rgb(0, 0, 0);
         color: #fff;
+        &:hover {
+            cursor: pointer;
+        }
+        &:active {
+            transform: scale(1.1);
+            transition: 0.8s;
+        }
+        &__link {
+            padding-bottom: 8px;
+        }
+    }
+    &__cart {
+        color: black;
+    }
+    &__text {
+        font-size: 30px;
+        text-align: center;
+        margin-top: 5%;
+    }
+    &__ico {
+        font-size: 18px;
+    }
+    &__total {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        gap: 5%;
+        margin-top: 3%;
+    }
+    &__content {
+        display: grid;
+        grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+
+        // background-color: plum;
+        &__2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &--titl {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                height: 60px;
+                width: 64%;
+                margin-left: 26%;
+            }
+        }
+        &__img {
+            width: 180px;
+        }
+        &__titu {
+            font-size: 20px;
+            width: 120px;
+        }
+        &__btn {
+            background: none;
+            border: none;
+            &:hover {
+                cursor: pointer;
+            }
+            &:active {
+                transform: scale(1.1);
+                transition: 0.8s;
+            }
+        }
     }
 }
