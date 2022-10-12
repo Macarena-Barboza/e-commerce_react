@@ -8,7 +8,7 @@ function NavBar() {
   return (
     <header className='navbar'>
       <Link to='/'>
-        <div className='Logo'> <FaChess/>  Super Games</div>
+        <div className='Logo'> <FaChess/>  Super Gaming</div>
       </Link>
         <div>
             <ul className='navbar__item'>

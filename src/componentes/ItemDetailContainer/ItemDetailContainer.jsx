@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from 'react'
-import {getSingleItems}from '../../services/mockAPI';
+// import {getSingleItems}from '../../services/mockAPI';  //  _____ API(falsa) _____
+import {getSingleItems}from '../../services/firestore';
 import ItemDetail from '../ItemDetail/ItemDetail';
 import {useParams} from 'react-router-dom';
 import CircularProgress from '@mui/material/CircularProgress';
 import './itemDetailContainer.scss';
-
 
 function ItemDetailContainer() {
       let [data, setData]= useState({});

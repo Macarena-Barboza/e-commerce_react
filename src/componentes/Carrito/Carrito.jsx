@@ -5,7 +5,6 @@ import {FaTrash } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import FormatPrice from '../Productos/Precio.js'
 
-
 function Carrito() {
 
   const {cart, clearCart, deleteItem, getTotalItemPriceInCart} = useContext(cartContext)

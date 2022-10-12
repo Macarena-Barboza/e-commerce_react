@@ -33,7 +33,7 @@ function Footer() {
                 <div className="p_pag__contact">
                     <ul>
                         <li className="p_pag__contact__font">Lunes a Viernes de 9 a 20 hs</li>
-                        <li className="p_pag__contact__font"> <FontAwesomeIcon icon={faEnvelope}/> supergames@gmail.com</li>
+                        <li className="p_pag__contact__font"> <FontAwesomeIcon icon={faEnvelope}/> supergaming@gmail.com</li>
                         <li className="p_pag__contact__font"> <FaWhatsapp/>112345678</li>
                         <li className="p_pag__contact__font"><FaPhoneAlt/> 0810-777-762</li>
                     </ul>
