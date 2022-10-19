@@ -13,6 +13,7 @@ import CartContextProvider from './Context/cartContext';
 import Carrito from './componentes/Carrito/Carrito';
 import FavContextProvider from './Context/favContext';
 import Favorito from './componentes/Favorito/Favorito';
+import CheckoutForm from './componentes/CheckoutForm/CheckoutForm';
 
  
 function App() {
@@ -26,6 +27,7 @@ function App() {
 
             <Route path='/categoria/:categoria' element={<ItemListContainer/>}/>
             <Route path='/fantasia/:id' element={<ItemDetailContainer/>}/>
+            <Route path='/checkoutForm' element={<CheckoutForm/>}/>
             <Route path='/accesorios' element={<Accesorios/>}/>
             <Route path='/usuario' element={<Login/>}/>
             <Route path='/carrito' element={<Carrito/>}/>
