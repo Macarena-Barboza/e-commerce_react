@@ -1,9 +1,10 @@
 footer {
-    background: rgb(129, 6, 41);
+    backdrop-filter: blur(3px); 
+    background-color: rgba(95, 95, 95, 0.433);
     width: 100%;
-    padding-bottom: 1%;
     position: absolute;
     bottom: 0;
+    z-index: 500;
 }
 li {
     list-style: none;
@@ -13,8 +14,9 @@ li {
 .copy {
     display: flex;
     justify-content: center;
-    background-color: rgb(129, 6, 41);
     color: #fff;
+    backdrop-filter: blur(3px); 
+    background-color: rgba(95, 95, 95, 0.433);
 }
 .p_pag {
     display: flex;
@@ -35,16 +37,24 @@ li {
     &__ico {
         font-size: 40px;
         color: #fff;
-        padding: 2rem 0 0 6rem;
+        padding-top: 2rem;
     }
 }
 
 @media (max-width: 720px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     .p_pag {
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
-        padding-left: 2rem;
+        padding-left: 17%;
+        &__ico {
+            padding: 2rem 0 0 5rem;
+        }
     }
     .copy {
         font-size: 13px;

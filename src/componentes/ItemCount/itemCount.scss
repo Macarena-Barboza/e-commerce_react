@@ -3,23 +3,44 @@
 }
 .btnMas,
 .btnMenos {
-    margin: 1rem;
+    margin: .5rem;
     border-radius: 5px;
-    padding: 8px 15px;
-    background-color: rgb(179, 179, 179);
+    padding: 6px 13px;
+    background-color: rgb(77, 123, 111);
     border: none;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .btnAgregar {
-    padding: 15px;
-    background-color: rgb(98, 171, 77);
+    padding: 10px;
+    color: #fff;
+    background-color: rgb(77, 159, 54);
     border: none;
     border-radius: 10px;
-    margin-right: 10px;
+    margin-right: 10%;
     font-size: 16px;
     &:active {
         transform: scale(1.1);
         transition: 0.1s;
+    }
+}
+.btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6px 0 10px;
+}
+button{
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 900px) {
+    .btnMasMenos {
+        margin: 0;
+    }
+    .btnAgregar{
+        padding: 9px;
     }
 }

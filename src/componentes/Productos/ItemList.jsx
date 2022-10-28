@@ -1,12 +1,17 @@
 import React from 'react'
 import Card from './Card'
 import './card.scss';
-
+import Filtro from './Filtro';
+import './ItemListContainer2.scss'
 
 function ItemList(props) {
 
   return (
-      <section>
+    <div className='contenContainer'>
+        <div className='contenContainer__filt'>
+           <Filtro/>
+        </div>
+      <section className="contenContainer__juegos">
             {props.data.map((item) => {
                return(
                  <Card
@@ -23,6 +28,8 @@ function ItemList(props) {
                })
             }
       </section>
+  </div>
+
   )
 }
 

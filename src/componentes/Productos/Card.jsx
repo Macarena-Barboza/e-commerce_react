@@ -6,13 +6,12 @@ import FormatPrice from '../Productos/Precio'
 
 function Card(props) {
   let { precio, titulo, img, id, reseña} = props;
-  const urlUnica= `/fantasia/${id}`
+  const urlUnica= `/productos/${id}`
   return (
-    // <div>
     <>
       <div className="card" key={id}>
         <Link to= {urlUnica}>
-          <img src={img} alt={titulo}/>
+            <img className="card__img" src={img} alt={titulo}/>
         </Link> 
 
         <div className="card__description">
@@ -25,7 +24,6 @@ function Card(props) {
       </div>
     
     </>
-    // </div>
   )
 }
 export default Card

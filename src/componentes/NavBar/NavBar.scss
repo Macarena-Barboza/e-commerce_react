@@ -5,25 +5,27 @@ header {
 }
 
 .navbar {
-    background: rgb(129, 6, 41);
+    background: rgb(21, 18, 19);
     height: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #fff;
     padding: 28px;
-    &__item {
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-        list-style: none;
-    }
+    z-index: 1000;
+    backdrop-filter: blur(3px); 
+    background-color: rgba(95, 95, 95, 0.433);
     &__iconos {
         font-size: 20px;
         display: flex;
-        gap: 30px;
-        margin-right: 10px;
+        gap: 17px;
         align-items: center;
+        &__s{
+            display: none;
+        }
+        &__c{
+          padding-bottom: 2px;
+        }
     }
 }
 a {
@@ -33,7 +35,56 @@ a {
         color: rgb(245, 141, 141);
     }
 }
-.active {
-    font-weight: bold;
-    color: rgb(254, 209, 93);
-}
+
+//_____________ navbar responsives ________________
+
+  .links {
+      position: absolute;
+      top: -1000px;
+      left:-3400px;
+      right: 0;
+  }
+  .links.active{
+    width: 100%;
+    margin: auto;
+    top: 55px;
+    left:0;
+    right: 0;
+    background-color: rgba(18, 18, 18, 0.894);
+    height: 100vh;
+    padding: 18% 37%;
+    font-size: 20px;
+    transition: ease-in-out;
+    a{
+        margin: 20px;
+    }
+  }
+@media(min-width: 768px){
+    .burguer{
+      display: none;
+    }
+    .links{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        list-style: none;
+        width: 320px;
+    position: absolute;
+    top: 14px;
+    left:0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    transition: all .3s ease;
+    }
+    .navbar{
+      &__iconos{
+        margin-right: 10px;
+        gap: 26px;
+        &__s{
+            display: block;
+        }
+      }
+    }
+  }

@@ -4,6 +4,7 @@ import {getSingleItems}from '../../services/firestore';
 import ItemDetail from '../ItemDetail/ItemDetail';
 import {useParams} from 'react-router-dom';
 import CircularProgress from '@mui/material/CircularProgress';
+
 import './itemDetailContainer.scss';
 
 function ItemDetailContainer() {
@@ -29,7 +30,8 @@ if(loading){
           (<div> 
               <h2 style={{ color: "#aa0033" }}>Error obteniendo los datos</h2> 
               <p>{error}</p>
-          </div>) :(<CircularProgress className='loader'/> 
+          </div>) :(
+          <CircularProgress className='loader'/> 
         )}
     </>
   )

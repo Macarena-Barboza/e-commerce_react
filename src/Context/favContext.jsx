@@ -20,12 +20,13 @@ export default function FavContextProvider({ children }) {
             theme: "colored",
             hideProgressBar: true,
             style: {
-                background: "linear-gradient(19deg, #97fbc9 0%, #dbafe7 100%)",
+                background: "linear-gradient(19deg, #5ce7ff 0%, #bf61d9 100%)",
                 borderRadius: "7px",
                 fontWeight: "600",
                 top: "50px",
                 color: "#fff",
                 textShadow: "1px 1px 2px rgba(0,0,0,0.386)",
+                boxShadow: "0px 0px 10px 1px #75e9f6",
             },
         });
     };

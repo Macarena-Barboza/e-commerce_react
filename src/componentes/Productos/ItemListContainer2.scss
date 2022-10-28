@@ -1,0 +1,67 @@
+.contenContainer {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: flex-start;
+    &__filt {
+        background-color: rgb(30, 30, 30);
+        min-width: 210px;
+        padding: 20px 20px 0 0;
+        display: flex;
+        justify-content: center;
+        ul li {
+            padding: 5px;
+        }
+    }
+    &__juegos{
+        padding-left: 1% ;
+    }
+}
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+h3{
+margin-top: 30px;
+}
+
+@media (max-width: 900px) {
+    .contenContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+        h3{
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+        &__filt{
+            padding-right:  0;
+            &__gen {
+                width: 80%;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 5px;
+                margin: 0 auto 20px;
+                padding: 0;
+             }
+        }
+         &__juegos{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            align-items: center;
+            padding-bottom: 5rem;
+        }
+
+    }
+
+
+}
+

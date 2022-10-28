@@ -1,0 +1,17 @@
+.novedades{
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: center;
+      width: 100%;
+      h4{
+            margin-top: 2rem;
+      }
+      span{
+            color:rgb(243, 122, 42); 
+      }
+      &__trailer{
+            min-width: 320px;
+            display: flex;
+            justify-content: center;
+      }
+}

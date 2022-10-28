@@ -1,4 +1,3 @@
-// import './boton.css';
 import './Boton.scss';
 
 function Boton(props) {

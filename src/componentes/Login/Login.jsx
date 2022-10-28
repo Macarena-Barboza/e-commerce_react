@@ -1,17 +1,32 @@
 import './Login.scss';
+import '../Carrito/carrito.scss';
+import '../CheckoutForm/checkoutForm.scss'
 
 function Login() {
   return (
-    <div className='login'>
-          <div>Login</div>
-          <h1>registrate</h1>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus obcaecati perferendis cumque facere minima cum, dolores temporibus, suscipit vero earum, nam ipsum qui! Deserunt, quo corporis? Amet tempore maxime explicabo.</p>
-         <form action="">
-          nombre:
-          <input type="text" /><br></br>
-          Email:
-          <input type="email" /><br></br>
-         </form>
+    <div className='carrito'>
+          <h1>regístrate</h1>
+          <div className="login">
+            <p className='login__text'>Para recibir más promociones y noticias de último momento.</p>
+            <div className="checkout">
+              <form action="" className='login__form'>
+                  <div className="checkout__input">
+                      <label htmlFor="email">Email</label>
+                      <input name="email" type="email" placeholder="Email" required />
+                  </div>
+                  <div className="checkout__input">
+                      <label htmlFor="email">Contraseña</label>
+                      <input name="password" type="password" placeholder="Contraseña" minLength={8} required />
+                  </div>
+                  <div className="login__btns">
+                    <button className="btn">Iniciar Sesion</button>
+                    <div className="btn__regis">
+                      <p>¿No tienes cuenta?</p><button className="btn__ini">regístrate</button>
+                    </div>
+                  </div>
+              </form>
+            </div>
+          </div>
     </div>
   )
 }

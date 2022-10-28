@@ -1,11 +1,3 @@
-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    justify-content: center;
-    gap: 20px;
-    margin: 0 40px; //???????????????
-}
-
 h1 {
     display: flex;
     flex-direction: column;
@@ -13,8 +5,8 @@ h1 {
 }
 .card {
     max-width: 300px;
-    // padding: 1rem;
     &__description {
+        color: #fff;
         &__cont {
             display: flex;
             justify-content: space-between;
@@ -29,14 +21,17 @@ h1 {
             font-size: 17px;
             align-items: center;
             display: flex;
-            .star {
+            .star  {
                 color: rgb(255, 208, 0);
                 font-size: 22px;
             }
         }
     }
+    &__img {
+        max-width: 300px;
+        border-radius: 17px;
+    }
 }
-img {
-    max-width: 300px;
-    border-radius: 17px;
+.contenContainer__filt{
+    color:#fff;
 }

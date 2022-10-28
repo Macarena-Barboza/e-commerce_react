@@ -40,17 +40,17 @@ function Footer() {
                 </div>
 
                 <div className="p_pag__redes">
-                        <ul>
-                            <li><a href="https://www.instagram.com/" target="_blank "> <FaInstagram/> Instagram</a></li>
-                            <li><a href="https://www.twitch.tv/" target="_blank "> <FaTwitch/> Twitch</a></li>
-                            <li><a href="https://es-la.facebook.com/" target="_blank "><FaFacebookSquare/> Facebook</a></li>
-                            <li><a href="https://twitter.com/?lang=es" target="_blank "> <FaTwitter/> Twitter</a></li>
-                        </ul>
+                    <ul>
+                        <li><a href="https://www.instagram.com/" target="_blank "> <FaInstagram/> Instagram</a></li>
+                        <li><a href="https://www.twitch.tv/" target="_blank "> <FaTwitch/> Twitch</a></li>
+                        <li><a href="https://es-la.facebook.com/" target="_blank "><FaFacebookSquare/> Facebook</a></li>
+                        <li><a href="https://twitter.com/?lang=es" target="_blank "> <FaTwitter/> Twitter</a></li>
+                    </ul>
                 </div>            
 
             </div>
 
-            <div className="copy"> <p className="copy">© derechos reservados 2022 - <a href="https://github.com/Macarena-Barboza">Macarena Barboza <FaGithub/></a></p></div>
+            <div className="copy"> <p className="copy">© derechos reservados 2022 - <a href="https://github.com/Macarena-Barboza" target="_blank ">Macarena Barboza <FaGithub/></a></p></div>
         </footer>
   )
 }
