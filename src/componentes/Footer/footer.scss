@@ -40,6 +40,12 @@ li {
         padding-top: 2rem;
     }
 }
+@media (max-width: 1130px) {
+    .p_pag {
+        margin: auto;
+        gap: 2rem;
+    }
+}
 
 @media (max-width: 720px) {
     footer{
@@ -49,9 +55,11 @@ li {
     }
     .p_pag {
         display: flex;
+        flex-direction: column;
         justify-content: flex-start;
-        flex-wrap: wrap;
-        padding-left: 17%;
+        margin: auto;
+        padding: 0 0 5%;
+        gap: 2rem;
         &__ico {
             padding: 2rem 0 0 5rem;
         }

@@ -172,6 +172,12 @@
     }
 }
 
+@media (max-width: 960px) {
+    body{
+        padding-bottom: 20rem;
+    }
+}
+
 @media (max-width: 830px) {
     .presentacion__text__titl{
         font-size: 1.7rem;
@@ -211,7 +217,7 @@
  
     }
 }
-@media (max-width: 650px) {
+@media (max-width: 690px) {
     .presentacion__text__titl{
         font-size: 1.3rem;
         left: 8%;
