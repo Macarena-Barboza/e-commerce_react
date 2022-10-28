@@ -92,7 +92,7 @@ function ItemListContainer() {
 
         <section className="avances">
             <div className="avances__princ">
-                <img className="avances__princ__img" src="/assets/lichkingclassic.jpg" alt="" />
+                <img className="avances__princ__img" src="/assets/lichkingclassic.jpg" alt="Wrath of the Lich King Classic" />
                 <Link to="/productos/sJP7QXYO5lKiAEeqbIN9W">
                     <h4 className="avances__secun__titl">Wrath of the Lich King Classic</h4>
                 </Link> 
@@ -101,7 +101,7 @@ function ItemListContainer() {
 
             <div className="avances__secun">
                 <div className="avances__secun__cont">
-                    <img className="avances__secun__img" src="/assets/hombre-araña4.png" alt=""/>
+                    <img className="avances__secun__img" src="/assets/hombre-araña4.jpg" alt="Spider-Man"/>
                     <Link to="/productos/7woFgJdnlUTJYDxEC5arv" >
                         <h4 className="avances__secun__titl">Spider-Man: Miles Morales</h4>
                     </Link> 
@@ -109,7 +109,7 @@ function ItemListContainer() {
                 </div>
 
                 <div className="avances__secun__cont">
-                    <img className="avances__secun__img" src="/assets/kena2.jpg" alt=""/>
+                    <img className="avances__secun__img" src="/assets/kena2.jpg" alt="Kena"/>
                     <Link to="/productos/amxhxLTnyqfIR3aO8Uewi">
                         <h4 className="avances__secun__titl">Kena: Bridge of Spirits</h4>
                     </Link> 
