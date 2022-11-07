@@ -3,7 +3,7 @@
 
 Super Games simula un e-commerce de juegos 🎮 que tiene categorías así filtrarás los juegos y si te interesa uno podrás ver más detalles, cuanto stock queda y comprar todos los que quieras.
 
-Al realizar este Proyecto utilize:
+
 Este proyecto está desarrollado como **Single Page Application** y es creado especialmente con • **React js** <sub><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="22" height="20" alt="React" /></sub>  pero también use • **JavaScript**  	<sub><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="16" height="21" textling= "center" alt="Javascript" /></sub> para dar mas dinamismo a la aplicación y • **Sass** <sub><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/sass-colored.svg" width="26" height="26" alt="Sass" /></sub>  junto con • **Material UI**  para los estilos.
 
 <br>
